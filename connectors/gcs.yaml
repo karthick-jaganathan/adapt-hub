@@ -1,0 +1,9 @@
+key: gcs
+title: Google Cloud Storage
+family: readers
+summary: Read objects from Google Cloud Storage
+trust: official
+homepage: https://github.com/karthick-jaganathan/ADaPT-ETL
+maintainer: karthick-jaganathan
+install:
+  git: "git+https://github.com/karthick-jaganathan/ADaPT-ETL.git@e6224356585018db4242f8137a89f1d183e3ca0a#subdirectory=connectors/readers/gcs"

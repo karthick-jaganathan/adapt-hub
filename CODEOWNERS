@@ -1,0 +1,8 @@
+# All hub changes require review by a maintainer before merge.
+# Community connector PRs add one file under connectors/ and are reviewed here.
+*                   @karthick-jaganathan
+/connectors/        @karthick-jaganathan
+/schema/            @karthick-jaganathan
+/scripts/           @karthick-jaganathan
+/denylist.yaml      @karthick-jaganathan
+/.github/           @karthick-jaganathan

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ADaPT connector entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["key", "title", "family", "summary", "trust", "install"],
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "The provider/sdk key used in source YAML; matches the connector's entry-point name.",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "title": { "type": "string", "minLength": 2, "maxLength": 60 },
+    "family": { "type": "string", "enum": ["readers", "ads", "crm", "analytics", "warehouse", "other"] },
+    "summary": { "type": "string", "minLength": 4, "maxLength": 160 },
+    "trust": {
+      "type": "string",
+      "enum": ["official", "verified", "community"],
+      "description": "official = first-party; verified = reviewed partner; community = unreviewed."
+    },
+    "homepage": { "type": "string", "format": "uri" },
+    "maintainer": { "type": "string" },
+    "keywords": { "type": "array", "items": { "type": "string" }, "maxItems": 12 },
+    "install": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Exactly one of pip | git | image.",
+      "oneOf": [
+        { "required": ["pip"] },
+        { "required": ["git"] },
+        { "required": ["image"] }
+      ],
+      "properties": {
+        "pip": { "type": "string", "description": "A PyPI requirement, e.g. adapt-postgres>=0.1,<0.2" },
+        "git": { "type": "string", "description": "git+https URL pinned to a tag or commit (…@<ref>#subdirectory=…)" },
+        "image": { "type": "string", "description": "OCI image pinned by digest, e.g. ghcr.io/org/x@sha256:…" }
+      }
+    }
+  }
+}

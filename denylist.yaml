@@ -1,0 +1,15 @@
+# Connectors blocked from installation (supply-chain safety).
+#
+# The CLI and index build refuse anything listed here. Add an entry to revoke a
+# compromised or malicious connector instantly — the hub is just an index, so a
+# merge here takes effect immediately.
+#
+# Match on any of: key, pip name, git url (prefix), or image (prefix).
+denied:
+  # - key: evil_connector
+  #   reason: "malware; reported 2026-10-06"
+  # - pip: "adapt-evil"
+  #   reason: "typosquat of adapt-postgres"
+  # - git: "git+https://github.com/attacker/"
+  #   reason: "known-bad source"
+  []

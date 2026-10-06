@@ -1,0 +1,9 @@
+key: s3
+title: Amazon S3
+family: readers
+summary: Read objects from Amazon S3
+trust: official
+homepage: https://github.com/karthick-jaganathan/ADaPT-ETL
+maintainer: karthick-jaganathan
+install:
+  git: "git+https://github.com/karthick-jaganathan/ADaPT-ETL.git@e6224356585018db4242f8137a89f1d183e3ca0a#subdirectory=connectors/readers/s3"

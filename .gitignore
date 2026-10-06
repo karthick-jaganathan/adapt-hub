@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+/public/
+/index.json
+.DS_Store
