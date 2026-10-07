@@ -6,4 +6,4 @@ trust: official
 homepage: https://github.com/karthick-jaganathan/ADaPT-ETL
 maintainer: karthick-jaganathan
 install:
-  git: "git+https://github.com/karthick-jaganathan/ADaPT-ETL.git@e6224356585018db4242f8137a89f1d183e3ca0a#subdirectory=connectors/readers/s3"
+  git: "git+https://github.com/karthick-jaganathan/ADaPT-ETL.git@b0257ef77574af5ff0f3eff125a2a707b08c571f#subdirectory=connectors/readers/s3"
