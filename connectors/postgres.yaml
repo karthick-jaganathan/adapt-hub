@@ -3,7 +3,7 @@ title: PostgreSQL
 family: readers
 summary: Read-only SELECT queries on PostgreSQL
 trust: official
-homepage: https://github.com/karthick-jaganathan/ADaPT-ETL
+homepage: https://github.com/karthick-jaganathan/streamwright
 maintainer: karthick-jaganathan
 install:
-  git: "git+https://github.com/karthick-jaganathan/ADaPT-ETL.git@b0257ef77574af5ff0f3eff125a2a707b08c571f#subdirectory=connectors/readers/postgres"
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@e1822c585ea8654f0db6f70b856c79b7005c2e1e#subdirectory=connectors/readers/postgres"

@@ -8,8 +8,8 @@
 denied:
   # - key: evil_connector
   #   reason: "malware; reported 2026-10-06"
-  # - pip: "adapt-evil"
-  #   reason: "typosquat of adapt-postgres"
+  # - pip: "streamwright-evil"
+  #   reason: "typosquat of streamwright-postgres"
   # - git: "git+https://github.com/attacker/"
   #   reason: "known-bad source"
   []

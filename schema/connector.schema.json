@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ADaPT connector entry",
+  "title": "StreamWright connector entry",
   "type": "object",
   "additionalProperties": false,
   "required": ["key", "title", "family", "summary", "trust", "install"],
@@ -31,7 +31,7 @@
         { "required": ["image"] }
       ],
       "properties": {
-        "pip": { "type": "string", "description": "A PyPI requirement, e.g. adapt-postgres>=0.1,<0.2" },
+        "pip": { "type": "string", "description": "A PyPI requirement, e.g. streamwright-postgres>=0.1,<0.2" },
         "git": { "type": "string", "description": "git+https URL pinned to a tag or commit (…@<ref>#subdirectory=…)" },
         "image": { "type": "string", "description": "OCI image pinned by digest, e.g. ghcr.io/org/x@sha256:…" }
       }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate every connector entry in the ADaPT hub.
+"""Validate every connector entry in the StreamWright hub.
 
 Enforces supply-chain guardrails:
   * schema conformance (schema/connector.schema.json)

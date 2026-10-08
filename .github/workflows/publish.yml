@@ -1,7 +1,7 @@
 name: Publish index
 
 # Builds index.json (validation runs first) and publishes it to GitHub Pages:
-#   https://<owner>.github.io/adapt-hub/index.json
+#   https://<owner>.github.io/streamwright-hub/index.json
 on:
   push:
     branches: [main]
@@ -34,9 +34,9 @@ jobs:
           cp schema/connector.schema.json public/connector.schema.json
           # minimal landing page
           cat > public/index.html <<'HTML'
-          <!doctype html><meta charset="utf-8"><title>ADaPT Hub</title>
+          <!doctype html><meta charset="utf-8"><title>StreamWright Hub</title>
           <style>body{font:16px system-ui;max-width:720px;margin:3rem auto;padding:0 1rem;color:#1f2430}</style>
-          <h1>ADaPT connector hub</h1>
+          <h1>StreamWright connector hub</h1>
           <p>Machine-readable index: <a href="index.json">index.json</a></p>
           <p>Add a connector by opening a PR with a file under <code>connectors/</code>.</p>
           HTML

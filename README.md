@@ -1,11 +1,11 @@
-# ADaPT Hub
+# StreamWright Hub
 
-The connector registry for [ADaPT](https://github.com/karthick-jaganathan/ADaPT-ETL).
+The connector registry for [StreamWright](https://github.com/karthick-jaganathan/streamwright).
 It's a **static index** — one YAML file per connector, compiled into `index.json`
-and served over HTTPS. The `adapt` CLI reads it to discover and install connectors.
+and served over HTTPS. The `streamwright` CLI reads it to discover and install connectors.
 
 The hub holds **metadata only** (where to install a connector from). Connector
-**code** lives in its own repo (or the ADaPT monorepo) — the hub just points to it.
+**code** lives in its own repo (or the StreamWright monorepo) — the hub just points to it.
 
 ## Layout
 
@@ -25,12 +25,12 @@ title: PostgreSQL
 family: readers               # readers | ads | crm | analytics | warehouse | other
 summary: Read-only SELECT queries on PostgreSQL
 trust: official               # official | verified | community
-homepage: https://github.com/karthick-jaganathan/ADaPT-ETL
+homepage: https://github.com/karthick-jaganathan/streamwright
 maintainer: karthick-jaganathan
 install:                      # exactly one of pip | git | image
-  git: "git+https://github.com/karthick-jaganathan/ADaPT-ETL.git@<commit-sha>#subdirectory=connectors/readers/postgres"
-  # pip:   "adapt-postgres>=0.1,<0.2"
-  # image: "ghcr.io/org/adapt-postgres@sha256:<digest>"
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@<commit-sha>#subdirectory=connectors/readers/postgres"
+  # pip:   "streamwright-postgres>=0.1,<0.2"
+  # image: "ghcr.io/org/streamwright-postgres@sha256:<digest>"
 ```
 
 ## Contributing a connector
