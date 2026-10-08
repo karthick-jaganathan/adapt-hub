@@ -4,8 +4,9 @@ The connector registry for [StreamWright](https://github.com/karthick-jaganathan
 It's a **static index** — one YAML file per connector, compiled into `index.json`
 and served over HTTPS at https://karthick-jaganathan.github.io/streamwright-hub/index.json (published by
 `.github/workflows/publish.yml` on every push to `main`). The `streamwright` CLI reads it to discover and install
-connectors: by default from the snapshot bundled in each release, or live with
-`STREAMWRIGHT_HUB_URL=https://karthick-jaganathan.github.io/streamwright-hub/index.json` (or `--hub-url`).
+connectors live, by default (streamwright 0.1.5+). When the hub is unreachable the CLI warns and uses the last copy
+it fetched, else the snapshot bundled in each release. `STREAMWRIGHT_HUB_URL` / `--hub-url` point it at another
+index; `bundled` uses the bundled snapshot only.
 
 The hub holds **metadata only** (where to install a connector from). Connector
 **code** lives in its own repo (or the StreamWright monorepo) — the hub just points to it.
