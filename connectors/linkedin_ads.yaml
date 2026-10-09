@@ -1,0 +1,9 @@
+key: linkedin_ads
+title: LinkedIn Ads
+family: ads
+summary: LinkedIn Ads metadata and reporting analytics
+trust: official
+homepage: https://github.com/karthick-jaganathan/streamwright
+maintainer: karthick-jaganathan
+install:
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@26a58d8b9c6a0549a184a3939a8c57490ba03f90#subdirectory=connectors/ads/linkedin_ads"
