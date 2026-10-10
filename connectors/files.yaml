@@ -1,9 +1,9 @@
 key: files
 title: Files
 family: readers
-summary: Local JSONL/CSV/Parquet (runs offline)
+summary: "Local files: CSV, JSON, JSONL, Parquet, TSV (runs offline)"
 trust: official
 homepage: https://github.com/karthick-jaganathan/streamwright
 maintainer: karthick-jaganathan
 install:
-  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3eeb5e6897fa8c4e5852b415a1104664b484931e#subdirectory=connectors/readers/files"
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3a94799b4add567b51ac71c2fd3a5f9f01463929#subdirectory=connectors/readers/files"

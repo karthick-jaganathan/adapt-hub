@@ -1,9 +1,9 @@
 key: s3
 title: Amazon S3
 family: readers
-summary: Read objects from Amazon S3
+summary: Amazon S3 objects [DuckDB httpfs]
 trust: official
 homepage: https://github.com/karthick-jaganathan/streamwright
 maintainer: karthick-jaganathan
 install:
-  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3eeb5e6897fa8c4e5852b415a1104664b484931e#subdirectory=connectors/readers/s3"
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3a94799b4add567b51ac71c2fd3a5f9f01463929#subdirectory=connectors/readers/s3"

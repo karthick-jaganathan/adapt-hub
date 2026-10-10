@@ -1,0 +1,9 @@
+key: restapi
+title: REST API
+family: http
+summary: Generic REST API / HTTP connector [declarative HTTP]
+trust: official
+homepage: https://github.com/karthick-jaganathan/streamwright
+maintainer: karthick-jaganathan
+install:
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3a94799b4add567b51ac71c2fd3a5f9f01463929#subdirectory=connectors/http/restapi"
