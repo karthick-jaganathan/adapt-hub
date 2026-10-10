@@ -6,4 +6,4 @@ trust: official
 homepage: https://github.com/karthick-jaganathan/streamwright
 maintainer: karthick-jaganathan
 install:
-  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3a94799b4add567b51ac71c2fd3a5f9f01463929#subdirectory=connectors/ads/meta_ads"
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@v0.1.6#subdirectory=connectors/ads/meta_ads"
