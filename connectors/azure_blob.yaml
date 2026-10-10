@@ -1,0 +1,9 @@
+key: azure_blob
+title: Azure Blob Storage
+family: readers
+summary: Read objects from Azure Blob Storage
+trust: official
+homepage: https://github.com/karthick-jaganathan/streamwright
+maintainer: karthick-jaganathan
+install:
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3eeb5e6897fa8c4e5852b415a1104664b484931e#subdirectory=connectors/readers/azure_blob"

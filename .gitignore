@@ -3,3 +3,5 @@ __pycache__/
 /public/
 /index.json
 .DS_Store
+.vscode/
+

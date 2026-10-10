@@ -1,0 +1,9 @@
+key: amazon_ads
+title: Amazon Ads
+family: ads
+summary: Amazon Advertising Sponsored Products, Brands, Display, and reports
+trust: official
+homepage: https://github.com/karthick-jaganathan/streamwright
+maintainer: karthick-jaganathan
+install:
+  git: "git+https://github.com/karthick-jaganathan/streamwright.git@3eeb5e6897fa8c4e5852b415a1104664b484931e#subdirectory=connectors/ads/amazon_ads"
